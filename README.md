@@ -4,5 +4,5 @@ Live -
 
 Preview - 
 
-[images/desktop.png]
-[images/mobile.png]"# odin-recipe" 
+[!images/desktop.png]
+[!images/mobile.png]"# odin-recipe" 
