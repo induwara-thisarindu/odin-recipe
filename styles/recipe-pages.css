@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #333;
+}
+nav img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav h2 {
+    font-weight: 400;
+    color: #fff;
+}
+
+.recipe-card {
+    display: flex;
+    background: #ccc;
+    gap: 2rem;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1000px;
+    background: #525252;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container h2 {
+    color: #fff;
+    font-weight: 400
+}
+
+.container .time {
+    padding: 30px;
+}
+
+.container .time ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #0008;
+    color: white;
+    font-weight: 600;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container .time ul li {
+    list-style-type: none;
+}
+
+.container .time ul li span {
+    font-weight: 400;
+    color: goldenrod;
+}
+
+.container .ingedients {
+    border-bottom: 2px solid #333;
+}
+
+h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.container .ingedients ul {
+    color: #c2bebe;
+    padding: 20px;
+}
+
+.container .ingedients ul li {
+    padding: 5;
+    margin-bottom: 5px;
+}
+
+.container .steps h3 {
+    margin-top: 30px;
+}
+
+.container .steps ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 30px;
+}
+
+.container .steps ul li {
+    list-style-type: circle;
+    color: #fff;
+}
+
+.container .steps ul li .step {
+    color: goldenrod;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container .steps ul li .step-details {
+    color: #c2bebe;
+}
+
+.nutritions table {
+    padding: 20px;
+}
+
+.nutritions table tr td {
+    padding: 20px;
+    color: #c2bebe;
+    font-weight: 500;
+    border: 1px solid #c2bebe;
+}
+
+.nutritions table{
+    border: 3px solid #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nutritions table .class {
+    color: goldenrod;
+    font-weight: 700;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #525252;
+    border-left: 1rem solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.links ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1120px) {
+    .recipe-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .container .time ul{
+        grid-template-columns: 1fr;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
